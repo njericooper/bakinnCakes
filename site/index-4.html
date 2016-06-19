@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="wide smoothscroll wow-animation">
+<head>
+    <!-- Site Title -->
+    <title>Contacts</title>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300%7cAllura%7cPaytone+One' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 10]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- The Main Wrapper -->
+<div class="page">
+
+    <!--For older internet explorer-->
+    <div class="old-ie" style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <!--END block for older internet explorer-->
+
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header class="page-header" id="bg-header">
+        <!-- RD Navbar -->
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar" data-rd-navbar-lg="rd-navbar-static">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar"><span></span></button>
+                        <!-- END RD Navbar Toggle -->
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name">
+                                <span>Maria’s</span> <br> <span class="brand-slogan">Bakery</span>
+                            </a>
+                        </div>
+                        <!-- END RD Navbar Brand -->
+                    </div>
+                    <!-- END RD Navbar Panel -->
+
+                    <div class="rd-navbar-nav-wrap">
+
+                        <!-- RD Navbar Nav -->
+                        <ul class="rd-navbar-nav">
+                            <li>
+                                <a href="index.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="index-1.html"> Services</a>
+
+                                <!-- RD Navbar Dropdown -->
+                                <ul class="rd-navbar-dropdown">
+                                    <li>
+                                        <a href="#">delivery</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">catering</a>
+                                    </li>
+
+                                </ul>
+                                <!-- END RD Navbar Dropdown -->
+
+                            </li>
+                            <li >
+                                <a href="index-2.html">Products</a>
+                            </li>
+                            <li class="active">
+                                <a href="index-4.html">Contacts</a>
+                            </li>
+                        </ul>
+                        <!-- END RD Navbar Nav -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END RD Navbar -->
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main class="page-content" id="page-content">
+        <!-- Maria's Made-->
+        <section class="well-lg">
+            <div class="container text-center text-lg-left relative">
+                <h3>contact us</h3>
+                <div class="row offset-2">
+                    <div class="col-md-1">
+                        <span class="fa-envelope-o"></span>
+                    </div>
+                    <div class="col-lg-3 col-lg-preffix-0 col-md-4 col-md-preffix-3 col-sm-6 col-sm-preffix-3 col-xs-8 col-xs-preffix-2">
+                        <div class="contact-info">
+                            <address>
+                                9870 St Vincent Place,
+                                Glasgow, DC 45 Fr 45.
+                            </address>
+                            <dl>
+                                <dt>Freephone</dt>
+                                <dd><a href="callto:#">+1 800 559 6580</a></dd>
+                                <dt>Telephone </dt>
+                                <dd><a href="callto:#">+1 800 603 6035</a></dd>
+                                <dt>FAX</dt>
+                                <dd><a href="callto:#">+1 800 889 9898</a></dd>
+
+                            </dl>
+                           <p>E-mail: <a href="mailto:#">mail@demolink.org</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <!-- RD Mailform -->
+                        <form class='rd-mailform' method="post" action="bat/rd-mailform.php">
+                            <!-- RD Mailform Type -->
+                            <input type="hidden" name="form-type" value="contact"/>
+                            <!-- END RD Mailform Type -->
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label data-add-placeholder>
+                                            <input type="text"
+                                                   name="name"
+                                                   placeholder="Name"
+                                                   data-constraints="@NotEmpty @LettersOnly"/>
+                                        </label>
+
+                                        <label data-add-placeholder>
+                                            <input type="text"
+                                                   name="phone"
+                                                   placeholder="Phone"
+                                                   data-constraints="@Phone"/>
+                                        </label>
+
+                                        <label data-add-placeholder>
+                                            <input type="text"
+                                                   name="email"
+                                                   placeholder="Email"
+                                                   data-constraints="@NotEmpty @Email"/>
+                                        </label>
+                                </div>
+                                    <div class="col-md-6 offset-11">
+                                        <label data-add-placeholder class="preffix-label">
+                                            <textarea name="message" placeholder="Message"
+                                                      data-constraints="@NotEmpty"></textarea>
+                                        </label>
+                                    </div>
+                                 </div>
+                                <div class="mfControls btn-group text-center text-lg-right">
+                                    <button class="btn btn-md btn-default-var-1" type="submit">submit</button>
+                                </div>
+                                <div class="mfInfo"></div>
+                            </fieldset>
+                        </form>
+                        <!-- END RD Mailform -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RD Google Map -->
+        <div class="rd-google-map">
+            <div id="google-map" class="rd-google-map__model" data-zoom="14" data-x="-73.9874068" data-y="40.643180"></div>
+            <ul class="rd-google-map__locations">
+                <li data-x="-73.9874068" data-y="40.643180">
+                    <p>28 Jackson Blvd Ste 1020 Chicago
+                        IL 60604-2340</p>
+                </li>
+            </ul>
+        </div>
+        <!-- END RD Google Map -->
+    </main>
+    <!--========================================================
+                              FOOTER
+    ==========================================================-->
+    <footer class="page-footer">
+        <div class="container text-center text-md-left">
+            <div class="row row-md-middle">
+                <div class="col-md-5 col-md-preffix-1  col-md-push-1">
+                    <ul class="inline-list text-center">
+                        <li><a href="#" class="fa-twitter icon icon-xs icon-default"></a></li>
+                        <li><a href="#" class="fa-facebook icon icon-xs icon-default"></a></li>
+                        <li><a href="#" class="fa-google-plus icon icon-xs icon-default"></a></li>
+                        <li><a href="#" class="fa-rss icon icon-xs icon-default"></a></li>
+                        <li><a href="#" class="fa-pinterest icon icon-xs icon-default"></a></li>
+                    </ul>
+                    <address class="text-center">
+                        28 Jackson Blvd Ste 1020 Chicago
+                            IL 60604-2340
+                    </address>
+                </div>
+                <div class="col-md-3">
+                    <p>&#169; <span id="copyright-year">2016</span>
+                        <a href='index-5.html'>Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Core Scripts -->
+<script src="js/core.min.js"></script>
+<!-- Additional Functionality Scripts -->
+<script src="js/script.js"></script>
+</body>
+</html>
